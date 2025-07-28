@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm list:*)",
+      "Bash(ls:*)",
+      "Bash(pnpm run:*)",
+      "Bash(pkill:*)",
+      "Bash(kill:*)",
+      "Bash(rm:*)",
+      "Bash(pnpm install:*)",
+      "Bash(curl:*)"
+    ],
+    "deny": []
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm init:*)",
+      "Bash(mkdir:*)",
+      "Bash(python:*)",
+      "Bash(source:*)",
+      "Bash(pip install:*)",
+      "Bash(mise use:*)",
+      "Bash(rm:*)",
+      "Bash(touch:*)",
+      "Bash(alembic init:*)",
+      "Bash(git clone:*)",
+      "Bash(cp:*)",
+      "Bash(true)",
+      "Bash(chmod:*)",
+      "Bash(pnpm add:*)",
+      "Bash(alembic revision:*)",
+      "Bash(alembic upgrade:*)",
+      "Bash(git init:*)",
+      "Bash(git branch:*)",
+      "Bash(git add:*)",
+      "Bash(git reset:*)",
+      "Bash(git rm:*)",
+      "Bash(ls:*)",
+      "Bash(git commit:*)"
+    ],
+    "deny": []
+  }
+}

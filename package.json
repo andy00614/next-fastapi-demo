@@ -1,0 +1,24 @@
+{
+  "name": "fast-api-next",
+  "version": "1.0.0",
+  "description": "AI-powered fullstack application with FastAPI and Next.js",
+  "scripts": {
+    "dev": "concurrently \"pnpm run dev:backend\" \"pnpm run dev:frontend\"",
+    "dev:backend": "cd backend && ./run.sh",
+    "dev:frontend": "cd frontend && pnpm dev",
+    "install:all": "pnpm install && cd frontend && pnpm install && cd ../backend && python3.11 -m venv venv && ./venv/bin/pip install -r requirements.txt",
+    "build": "cd frontend && pnpm build",
+    "start": "concurrently \"pnpm run start:backend\" \"pnpm run start:frontend\"",
+    "start:backend": "cd backend && uvicorn app.main:app --host 0.0.0.0 --port 8000",
+    "start:frontend": "cd frontend && pnpm start",
+    "db:migrate": "cd backend && source venv/bin/activate && alembic upgrade head",
+    "db:makemigrations": "cd backend && source venv/bin/activate && alembic revision --autogenerate -m",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["fastapi", "nextjs", "ai", "fullstack"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
