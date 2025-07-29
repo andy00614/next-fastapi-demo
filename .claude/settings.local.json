@@ -23,7 +23,10 @@
       "Bash(git reset:*)",
       "Bash(git rm:*)",
       "Bash(ls:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(pnpm db:migrate:*)",
+      "Bash(git restore:*)",
+      "Bash(git push:*)"
     ],
     "deny": []
   }
