@@ -8,5 +8,6 @@ export default {
   dbCredentials: {
     url: env.DATABASE_URL,
   },
-  tablesFilter: ['better-saas_*'],
+  // Remove filter to pull all tables including 'tasks'
+  // tablesFilter: ['better-saas_*'],
 } satisfies Config;
